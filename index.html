@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Burgers</title>
+</head>
+
+<body>
+  <nav class="bg-yellow-400 flex justify-end">
+    <ul class="flex px-4 py-4">
+      <li onclick="scrollToHome()" class="px-4 cursor-pointer text-white">Home</li>
+      <li onclick="scrollToBestsellers()" id="best-seller-button" class="px-4 cursor-pointer text-white">Best Sellers</li>
+      <li onclick="scrollToLocations()" class="px-4 cursor-pointer text-white">Locations</li>
+      <li onclick="scrollToContact()" class="px-4 cursor-pointer text-white">Contact Us</li>
+    </ul>
+  </nav>
+  <div id="Home" class="bg-yellow-100">
+    <div class="text-center">
+      <h1 class="font-serif text-5xl pt-10 italic">Restaurant Name</h1>
+    </div>
+    <div class="flex justify-evenly flex-wrap">
+      <div class="px-28 py-32 w-1/2 text-center">
+        <div class="">
+          <h1 class="font-serif text-6xl">Spicy Burgers</h1>
+          <h1 class="font-serif text-5xl p-2">Best In Town</h1>
+        </div>
+        <div class="text-center">
+          <div class="w-80 m-auto py-6">
+            <p class="font-serif text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Commodi aliquid aperiam, eligendi voluptatem voluptatum at
+              architecto animi iure a assumenda. Aspernatur aliquid, ullam
+              alias tempore vitae quaerat quasi praesentium vero!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="px-28 py-32">
+        <img class="h-80 rounded-tl-lg sm:h-80" src="./burger-svgrepo-com.svg" />
+      </div>
+    </div>
+  </div>
+  <div id="BestSellers" class="bg-yellow-100 pb-16">
+    <div class="text-center">
+      <h1 class="font-serif text-5xl p-10 italic">Best Sellers</h1>
+    </div>
+    <div class="flex justify-evenly font-serif flex-wrap">
+      <div class="rounded-lg shadow-lg bg-white max-w-sm text-center sm: m-4">
+        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <img class="rounded-t-lg p-10" src="./burger-hamburger-svgrepo-com.svg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+          <p class="text-gray-700 text-base mb-4">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button"
+            class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+            Try Now
+          </button>
+        </div>
+      </div>
+      <div class="rounded-lg shadow-lg bg-white max-w-sm text-center sm: m-4">
+        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <img class="rounded-t-lg p-10" src="./burger-hamburger-svgrepo-com.svg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+          <p class="text-gray-700 text-base mb-4">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button"
+            class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+            Try Now
+          </button>
+        </div>
+      </div>
+      <div class="rounded-lg shadow-lg bg-white max-w-sm text-center sm: m-4">
+        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <img class="rounded-t-lg p-10" src="./burger-hamburger-svgrepo-com.svg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+          <p class="text-gray-700 text-base mb-4">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button"
+            class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+            Try Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Locations" class="bg-yellow-100">
+    <div class="text-center pt-10">
+      <h1 class="font-serif text-5xl p-10 italic">Locations</h1>
+    </div>
+    <swiper-container class="pb-16 font-serif" pagination="true" pagination-clickable="true" space-between="20"
+      slides-per-view="2">
+      <swiper-slide class="bg-yellow-100">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm text-center m-auto">
+          <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img class="rounded-t-lg p-10" src="./restaurant-store-svgrepo-com.svg" alt="" />
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+            <p class="text-gray-700 text-base mb-4">Location</p>
+            <button type="button"
+              class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+              Navigate
+            </button>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="bg-yellow-100">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm text-center m-auto">
+          <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img class="rounded-t-lg p-10" src="./restaurant-store-svgrepo-com.svg" alt="" />
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+            <p class="text-gray-700 text-base mb-4">Location</p>
+            <button type="button"
+              class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+              Navigate
+            </button>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="bg-yellow-100">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm text-center m-auto">
+          <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img class="rounded-t-lg p-10" src="./restaurant-store-svgrepo-com.svg" alt="" />
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+            <p class="text-gray-700 text-base mb-4">Location</p>
+            <button type="button"
+              class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+              Navigate
+            </button>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="bg-yellow-100">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm text-center m-auto">
+          <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img class="rounded-t-lg p-10" src="./restaurant-store-svgrepo-com.svg" alt="" />
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+            <p class="text-gray-700 text-base mb-4">Location</p>
+            <button type="button"
+              class="inline-block px-6 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+              Navigate
+            </button>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  <div id="Contact" class="bg-yellow-100 font-serif">
+    <div class="text-center pb-10">
+      <h1 class="font-serif text-5xl p-10 italic">Contact Us</h1>
+      <div class="px-10">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugit repudiandae tempore. Molestiae ipsa
+          voluptatum, aspernatur ipsam voluptatem autem fuga? Quam at ipsam laudantium porro unde vel dolores iusto
+          tempore.</p>
+      </div>
+    </div>
+    <div class="flex justify-evenly">
+      <div>
+        <div class="p-10">
+          <h1 class="font-serif text-1xl font-bold italic">
+            <img class="h-10 w-10" src="./location-filled-svgrepo-com.svg"> Main Office
+          </h1>
+          <address>
+            102, Chinatown Street, <br>
+            Wonderland 767467
+          </address>
+        </div>
+        <div class="p-10">
+          <h1 class="font-serif text-1xl font-bold italic">
+            <img class="h-10 w-10" src="./phone-svgrepo-com.svg">Phone
+          </h1>
+          <address>+1 2364-8674-2737</address>
+        </div>
+        <div class="p-10">
+          <h1 class="font-serif text-1xl font-bold italic">
+            <img class="h-10 w-10" src="./email-svgrepo-com.svg">Email
+          </h1>
+          </h1>
+          <address>
+            <a a href="mailto:restaurant@landingpage.com">restaurant@landingpage.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="text-center">
+        <h1 class="bg-white font-serif text-2xl p-2 italic text-gray-700">Message Us</h1>
+        <form class="bg-white px-20 pt-4">
+          <div class="md:flex md:items-center mb-6">
+            <div class="">
+              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                Full Name
+              </label>
+            </div>
+            <div class="">
+              <input
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-500"
+                id="inline-full-name" type="text" value="">
+            </div>
+          </div>
+          <div class="md:flex md:items-center mb-6">
+            <div class="">
+              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-email">
+                Email
+              </label>
+            </div>
+            <div class="m-8">
+              <input
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-500"
+                id="inline-email" type="email" value="">
+            </div>
+          </div>
+          <div class="md:flex md:items-center mb-6">
+            <div class="m-1">
+              <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-message">
+                Message
+              </label>
+            </div>
+            <div class="">
+              <textarea id="message" rows="6"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-500"
+                placeholder="Write your thoughts here..."></textarea>
+            </div>
+          </div>
+          <div class="items-center text-center p-6">
+            <button type="button"
+              class="inline-block px-9 py-2.5 border-black font-medium text-xs leading-tight rounded shadow-md hover:bg-yellow-500 hover:shadow-lg hover:text-white transition duration-300 ease-in-out">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
